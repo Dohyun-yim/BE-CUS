@@ -40,6 +40,7 @@ function CallListPage() {
           <option value="name">이름</option>
           <option value="date">날짜</option>
           <option value="cluster">분류</option>
+          <option value="keyword">요약</option>
         </select>
         <input
           type="text"

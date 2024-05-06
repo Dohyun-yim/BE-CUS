@@ -8,7 +8,7 @@ import ManTalkImg from "../../assets/man/talk_navy.png";
 import CusImg from "../../assets/man/cus_gray.png";
 
 import Widget from "../../components/man/main/Widget";
-import Boxcall from "../../components/man/main/BoxCall";
+import Boxcall from "../../components/man/main/Boxcall";
 import Boxdashboard from "../../components/man/main/Boxdashboard";
 import Boxsetting from "../../components/man/main/Boxsetting";
 

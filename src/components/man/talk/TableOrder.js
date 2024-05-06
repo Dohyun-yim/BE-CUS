@@ -19,21 +19,21 @@ const TableOrder = () => {
       <tbody>
         {mockDataOrder.map((item) => (
           <tr key={item.id}>
-            <td>{item.작성일}</td>
-            <td>{item.업체명}</td>
-            <td>{item.전화번호}</td>
-            <td>{item.이메일}</td>
-            <td>{item.주문상품}</td>
+            <td>{item.o_created_at}</td>
+            <td>{item.o_name}</td>
+            <td>{item.o_phone}</td>
+            <td>{item.o_email}</td>
+            <td>{item.o_product_id}</td>
             <td
               className={
-                item.상태 === "요청 대기"
+                item.o_status === "요청 대기"
                   ? styles.waiting
-                  : item.상태 === "처리 완료"
+                  : item.o_status === "처리 완료"
                   ? styles.completed
                   : ""
               }
             >
-              {item.상태}
+              {item.o_status}
             </td>
           </tr>
         ))}

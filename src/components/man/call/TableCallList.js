@@ -48,6 +48,7 @@ function TableCallList({ rowData }) {
                 <th>날짜</th>
                 <th>시간</th>
                 <th>분류</th>
+                <th>요약</th>
                 <th>더보기</th>
               </tr>
             </thead>
@@ -58,6 +59,7 @@ function TableCallList({ rowData }) {
                   <td>{data.date}</td>
                   <td>{data.time}</td>
                   <td>{data.cluster}</td>
+                  <td>{data.keyword}</td>
 
                   <td>
                     <Link

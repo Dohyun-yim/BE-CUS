@@ -20,21 +20,21 @@ const TableAs = () => {
       <tbody>
         {mockDataAs.map((item) => (
           <tr key={item.id}>
-            <td>{item.작성일}</td>
-            <td>{item.업체명}</td>
-            <td>{item.전화번호}</td>
-            <td>{item.수리상품}</td>
-            <td>{item.수리유형}</td>
+            <td>{item.r_created_at}</td>
+            <td>{item.r_name}</td>
+            <td>{item.r_phone}</td>
+            <td>{item.r_product_id}</td>
+            <td>{item.r_type}</td>
             <td
               className={
-                item.상태 === "요청 대기"
+                item.r_status === "요청 대기"
                   ? styles.waiting
-                  : item.상태 === "처리 완료"
+                  : item.r_status === "처리 완료"
                   ? styles.completed
                   : ""
               }
             >
-              {item.상태}
+              {item.r_status}
             </td>
           </tr>
         ))}
